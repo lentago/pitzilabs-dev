@@ -36,7 +36,7 @@ export function Contact() {
 
           <div style={{ display: "grid", gap: 20, maxWidth: 480 }}>
             {[
-              { k: "Email",    v: "christopher@pitzilabs.com" },
+              { k: "Email",    v: "chris@pitzilabs.dev" },
               { k: "GitHub",   v: "github.com/PitziLabs" },
               { k: "Signal",   v: "available on request" },
               { k: "Response", v: "< 24h on weekdays" },
@@ -159,7 +159,7 @@ export function Footer() {
           fontFamily: "var(--font-mono)", fontSize: 12,
           color: "var(--fg3)"
         }}>
-          Christopher Pitzi · christopher@pitzilabs.com · © 2026
+          Christopher Pitzi · chris@pitzilabs.dev · © 2026
         </div>
         <div style={{
           fontFamily: "var(--font-mono)", fontSize: 11,

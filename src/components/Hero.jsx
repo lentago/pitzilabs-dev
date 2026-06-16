@@ -77,7 +77,7 @@ export function HeroDark() {
 
           <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 10, color: "#b8aea4", fontFamily: "var(--font-mono)", fontSize: 12 }}>
             <span>→</span>
-            <span>christopher@pitzilabs.com</span>
+            <span>chris@pitzilabs.dev</span>
           </div>
         </div>
       </div>
