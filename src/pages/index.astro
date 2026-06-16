@@ -1,29 +1,29 @@
 ---
-// PLACEHOLDER — replaced by the faithful design port.
-//
-// The real landing page is the Claude Design handoff in design/ (read
-// design/README.md first, then design/project/components/*.jsx and
-// design/project/design-system/). Port those sections to React components
-// under src/components/ and compose them here, in this order:
-//   Nav · HeroDark · StatusStrip · ServicesGrid · CaseStudy ·
-//   Principles · Experience · Contact · Footer
-// Render server-side only (no client: directive) — this is a static site.
-// Drop the dev-only Tweaks panel; bake its defaults (HeroDark, accent
-// #e08438, status strip on). See CLAUDE.md for the full porting brief.
+// Pitzi Labs landing page — faithful port of the Claude Design handoff in
+// design/. The sections are React components (src/components/) rendered
+// SERVER-SIDE ONLY: there is NO client:* directive anywhere below, so no
+// React ships to the browser — the build emits static HTML + the
+// design-system CSS in public/. The dev-only Tweaks panel is dropped and its
+// defaults are baked in: hero = dark, accent #e08438, status strip shown.
 import Layout from '../layouts/Layout.astro';
+import { NavBar } from '../components/Nav.jsx';
+import { HeroDark } from '../components/Hero.jsx';
+import { StatusStrip } from '../components/StatusStrip.jsx';
+import { ServicesGrid } from '../components/Services.jsx';
+import { CaseStudy } from '../components/CaseStudy.jsx';
+import { Principles } from '../components/Principles.jsx';
+import { Experience } from '../components/Experience.jsx';
+import { Contact, Footer } from '../components/Contact.jsx';
 ---
 
 <Layout>
-  <main
-    style="min-height:100vh;display:grid;place-items:center;text-align:center;padding:48px;font-family:var(--font-mono);color:var(--color-ink);"
-  >
-    <div>
-      <div style="font-size:48px;font-weight:700;letter-spacing:-0.05em;color:var(--color-accent);">
-        &lt;pl:&gt;
-      </div>
-      <p style="margin-top:16px;color:var(--color-ink-muted);">
-        Pitzi Labs — landing page port in progress.
-      </p>
-    </div>
-  </main>
+  <NavBar active="Practice" />
+  <HeroDark />
+  <StatusStrip />
+  <ServicesGrid />
+  <CaseStudy />
+  <Principles />
+  <Experience />
+  <Contact />
+  <Footer />
 </Layout>

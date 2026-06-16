@@ -44,6 +44,26 @@ const {
         background: var(--color-accent);
         color: #faf7f2;
       }
+
+      /* Hover states re-expressed as CSS — the design prototype used
+         onMouseEnter/onMouseLeave, which don't run on this static (no
+         hydration) site. Base values live here too so :hover can win. */
+      .pl-navlink {
+        color: var(--fg1);
+        transition: color 120ms var(--ease-standard);
+      }
+      .pl-navlink:hover {
+        color: var(--color-accent);
+      }
+      .pl-navlink--active {
+        color: var(--color-accent);
+      }
+      .pl-service-card {
+        background: #fff;
+      }
+      .pl-service-card:hover {
+        background: var(--color-bg);
+      }
     </style>
   </head>
   <body>
