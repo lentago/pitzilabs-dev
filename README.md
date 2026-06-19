@@ -27,8 +27,9 @@ case study on the page is that platform, running live.
 
 | Path | Purpose |
 |---|---|
-| `design/` | The Claude Design handoff bundle — the **source of truth** for the visual design (React/CSS prototype, design tokens, transcripts). Read `design/README.md` first. Not served. |
-| `src/` | The Astro site: `layouts/Layout.astro` (HTML shell + tokens), `pages/index.astro` (the page), `components/` (the ported sections). |
+| `design/` | Frozen archive — the original Claude Design concept + transcripts (provenance). Not served, not authoritative; see `/BRAND.md` and `design/ARCHIVE.md`. |
+| `BRAND.md` | The brand contract for the live site — mark, palette, type, conventions. Canonical token *values* live in `public/design-system/colors_and_type.css`. |
+| `src/` | The Astro site (source of truth for layout + copy): `layouts/Layout.astro` (HTML shell + tokens), `pages/index.astro` (the page), `components/` (the ported sections). |
 | `public/design-system/` | The served design tokens (`colors_and_type.css`) and self-hosted fonts (Space Grotesk, JetBrains Mono). |
 | `public/favicon.svg` | The `<pl:>` brand-chip favicon. |
 | `Dockerfile` / `nginx.conf` | Packages the built `dist/` into an `nginx` container on port `8080` with a `/health` endpoint for the ALB. |

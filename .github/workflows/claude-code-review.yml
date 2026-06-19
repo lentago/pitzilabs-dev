@@ -27,17 +27,17 @@ jobs:
       review_prompt: |
         This repository is the **Pitzi Labs landing site** — an Astro static
         site (server-rendered React, no client hydration) served by nginx on
-        the foundry-platform-demo AWS stack via GitHub OIDC → ECR/ECS/ALB. It
-        reproduces a Claude Design handoff (the source bundle lives in
-        `design/`). Review changes along these dimensions:
+        the foundry-platform-demo AWS stack via GitHub OIDC → ECR/ECS/ALB. The
+        live site is `src/`; `design/` is a frozen concept archive. Review
+        changes along these dimensions:
 
-        - **Design fidelity** — the rendered output must match the design in
-          `design/project/` (the `Pitzi Labs Landing` components + the
-          `design-system/colors_and_type.css` tokens). Flag drift in colors,
-          spacing, type, copy, or section order. Brand = the `<pl:>` mark,
-          navy #1c3552 + orange #e08438 + cream #faf7f2, Space Grotesk +
-          JetBrains Mono. Copy is load-bearing (e.g. the hero headline,
-          "Queue's open.", the principles) — don't let it get paraphrased.
+        - **Brand fidelity** — output must follow `/BRAND.md` and the served
+          tokens in `public/design-system/colors_and_type.css`. Brand = the
+          `<pl:>` mark, navy #1c3552 + orange #e08438 + cream #faf7f2, Space
+          Grotesk + JetBrains Mono, one orange accent per region. Flag drift in
+          palette, type, the mark, or section order. Copy is load-bearing —
+          don't paraphrase the hero headline, "Queue's open.", or the
+          principles. Do NOT diff against design/ (frozen archive).
         - **Static-site correctness** — components render at build with no
           `client:*` directive; no React should ship to the browser. The
           dev-only Tweaks panel must NOT be present. Interactions in the
