@@ -44,7 +44,7 @@ function HeroDark() {
         }}>
           Production{" "}
           <span style={{ color: "var(--color-accent)" }}>that shows up</span>
-          {" "}when the{" "}<span style={{ fontStyle: "italic", fontWeight: 500 }}>need</span>{" "}does.{" "}
+          {" "}when the{" "}<span style={{ fontStyle: "italic", fontWeight: 700, color: "#8aa0bd" }}>need</span>{" "}does.{" "}
           <span style={{ color: "var(--color-accent)", fontFamily: "var(--font-mono)", fontWeight: 700, letterSpacing: "-0.05em" }}>:&gt;</span>
         </h1>
 
@@ -117,7 +117,7 @@ function HeroPaper() {
           lineHeight: 1.02, letterSpacing: "-0.035em",
           margin: "0 0 28px", maxWidth: 920, color: "var(--fg1)"
         }}>
-          Production <span style={{ color: "var(--color-accent)" }}>that shows up</span> when the <span style={{ fontStyle: "italic", fontWeight: 500 }}>need</span> does.
+          Production <span style={{ color: "var(--color-accent)" }}>that shows up</span> when the <span style={{ fontStyle: "italic", fontWeight: 700, color: "var(--fg2)" }}>need</span> does.
         </h1>
         <p style={{ fontFamily: "var(--font-body)", fontSize: 19, color: "var(--fg2)", margin: "0 0 36px", maxWidth: 640, lineHeight: 1.55 }}>
           Twenty-five years of bare-metal data centers, 24×7 ops, and single-homed environments — now bridging into cloud-native architecture by building it, breaking it, and operating it.
