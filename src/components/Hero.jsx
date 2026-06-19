@@ -29,7 +29,7 @@ export function HeroDark() {
         <div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 28 }}>
           <StatusDot status="ok" size={8} />
           <Eyebrow tone="dark">
-            Practice · EST. 1999 · Infrastructure ops
+            Practice · EST. 1997 · Infrastructure ops
           </Eyebrow>
         </div>
 
@@ -49,9 +49,9 @@ export function HeroDark() {
           fontFamily: "var(--font-body)", fontSize: 19, color: "#d8cec2",
           margin: "0 0 36px", maxWidth: 640, lineHeight: 1.55
         }}>
-          Twenty-five years of bare-metal data centers, 24×7 ops, and single-homed
-          environments — now bridging into cloud-native architecture by building
-          it, breaking it, and operating it.
+          A career keeping production up — bare metal through cloud-native, and
+          every platform shift in between — now building it, breaking it, and
+          operating it myself.
         </p>
 
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
