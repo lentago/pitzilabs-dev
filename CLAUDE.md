@@ -50,7 +50,7 @@ visual design.** Before changing anything visual:
 - **Don't ship the print harness** — no `@page`/auto-`window.print()` from the
   `-print.html` variant. Sensible `@media print` is fine, the auto-print is not.
 - **Copy is load-bearing** — headline "Production that shows up when the
-  business does.", "Queue's open.", the six principles, the timeline. Don't
+  need does.", "Queue's open.", the six principles, the timeline. Don't
   paraphrase.
 
 ## Brand quick reference (from `design/project/design-system/README.md`)

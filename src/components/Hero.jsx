@@ -41,8 +41,7 @@ export function HeroDark() {
         }}>
           Production{" "}
           <span style={{ color: "var(--color-accent)" }}>that shows up</span>
-          {" "}when the{" "}<span style={{ color: "#8aa0bd" }}>business</span>{" "}
-          <span style={{ fontStyle: "italic", fontWeight: 500, color: "#8aa0bd" }}>does.</span>{" "}
+          {" "}when the{" "}<span style={{ fontStyle: "italic", fontWeight: 500 }}>need</span>{" "}does.{" "}
           <span style={{ color: "var(--color-accent)", fontFamily: "var(--font-mono)", fontWeight: 700, letterSpacing: "-0.05em" }}>:&gt;</span>
         </h1>
 
