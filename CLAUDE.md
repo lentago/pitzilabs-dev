@@ -64,6 +64,22 @@ frozen — see `design/ARCHIVE.md`.
 | OIDC deploy role | `arn:aws:iam::365184644049:role/foundry-dev-github-actions` |
 | Platform repo | [foundry-platform-demo](https://github.com/PitziLabs/foundry-platform-demo) (`modules/site`) |
 
+## CI & branch protection (fleet standard)
+
+This repo follows the PitziLabs fleet standard (`~/repos/fleet-ops`): squash-only
+merge button, auto-merge, delete-branch, the `pitzilabs`+`claude` topic spine,
+and a `main` branch ruleset (PR required, no force-push, no deletion).
+
+- **`Build` is a required check.** `.github/workflows/build.yml` runs
+  `npm ci && npm run build` on every PR; the `main` ruleset requires the `Build`
+  context, so **a PR can't merge unless the Astro build is green.** `deploy.yml`
+  only builds on push to `main` (post-merge) — `build.yml` is what catches a
+  broken build *before* it ships.
+- `claude-code-review` / `claude` workflows are **advisory** (AI review + the
+  `@claude` bot), not merge gates.
+- Arm merges with `gh pr merge <N> --auto --squash --delete-branch`; let the
+  `Build` check gate it. Don't hand-merge past a red build.
+
 ## Conventions to respect
 
 - `design/` is reference-only — never serve it; never delete it. It's a frozen

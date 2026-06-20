@@ -36,6 +36,9 @@ pull → evaluate → promote │ park │ drop
    - **Promote** → port into `src/` (server-rendered, no hydration — see
      `CLAUDE.md`) or, for non-site deliverables, into their real home (e.g. the
      org README → `pitzi-labs/.github`). Then delete or thin the `lab/` copy.
+     Promotion to `src/` goes through a PR that must pass the required **`Build`**
+     check (the Astro build) before it can merge — see `CLAUDE.md` → *CI & branch
+     protection*.
    - **Park** → leave it here with a note in this file's *Parked ideas*.
    - **Drop** → delete it; record the lesson below if it's worth remembering.
 
