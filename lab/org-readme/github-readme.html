@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PitziLabs — Org Profile README directions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<style>
+  html, body { margin: 0; height: 100%; background: #161b22; }
+
+  /* ===== GitHub dark README chrome ===== */
+  .gh-card {
+    width: 100%; height: 100%;
+    background: #0d1117;
+    border: 1px solid #3d444d;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  }
+  .gh-head {
+    flex: 0 0 auto;
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 16px;
+    background: #151b23;
+    border-bottom: 1px solid #3d444d;
+    color: #f0f6fc; font-size: 14px; font-weight: 600;
+  }
+  .gh-head svg { fill: #9198a1; flex: 0 0 auto; }
+  .gh-head .path { color: #9198a1; font-weight: 400; }
+  .gh-head .spacer { margin-left: auto; }
+  .gh-head .pencil { fill: #9198a1; }
+  .gh-body {
+    flex: 1 1 auto;
+    padding: 32px 32px 40px;
+    overflow: hidden;
+  }
+  .gh-loading { color: #9198a1; font-size: 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+  /* ===== github-markdown (dark) — scoped ===== */
+  .markdown-body {
+    color: #e6edf3;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+  }
+  .markdown-body > *:first-child { margin-top: 0 !important; }
+  .markdown-body > *:last-child { margin-bottom: 0 !important; }
+  .markdown-body h1, .markdown-body h2, .markdown-body h3,
+  .markdown-body h4 { margin: 24px 0 16px; font-weight: 600; line-height: 1.25; }
+  .markdown-body h1 { font-size: 2em; padding-bottom: .3em; border-bottom: 1px solid #3d444d; letter-spacing: -0.5px; }
+  .markdown-body h2 { font-size: 1.5em; padding-bottom: .3em; border-bottom: 1px solid #3d444d; }
+  .markdown-body h3 { font-size: 1.25em; }
+  .markdown-body p { margin: 0 0 16px; }
+  .markdown-body a { color: #4493f8; text-decoration: none; }
+  .markdown-body a:hover { text-decoration: underline; }
+  .markdown-body strong { font-weight: 600; color: #f0f6fc; }
+  .markdown-body blockquote {
+    margin: 0 0 16px; padding: 0 1em;
+    color: #9198a1; border-left: .25em solid #3d444d;
+  }
+  .markdown-body blockquote > :last-child { margin-bottom: 0; }
+  .markdown-body code {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 85%;
+    background: rgba(101,108,118,0.2);
+    padding: .2em .4em; border-radius: 6px;
+  }
+  .markdown-body pre {
+    margin: 0 0 16px; padding: 16px;
+    background: #151b23; border-radius: 6px;
+    overflow: auto; font-size: 85%; line-height: 1.45;
+  }
+  .markdown-body pre code { background: transparent; padding: 0; font-size: 100%; border-radius: 0; }
+  .markdown-body table {
+    border-collapse: collapse; margin: 0 0 16px; width: auto; max-width: 100%;
+    display: table;
+  }
+  .markdown-body th, .markdown-body td {
+    border: 1px solid #3d444d; padding: 6px 13px;
+  }
+  .markdown-body th { font-weight: 600; background: #151b23; }
+  .markdown-body tr { background: #0d1117; border-top: 1px solid #3d444d; }
+  .markdown-body tr:nth-child(2n) { background: #151b23; }
+  .markdown-body hr { height: 1px; border: 0; background: #3d444d; margin: 24px 0; }
+  .markdown-body img { max-width: 100%; vertical-align: middle; }
+  .markdown-body ul, .markdown-body ol { padding-left: 2em; margin: 0 0 16px; }
+  .markdown-body sub { font-size: 80%; color: #9198a1; }
+  .markdown-body p img { margin: 2px 2px; }
+</style>
+
+<template id="__bundler_thumbnail" data-bg-color="#0d1117">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0d1117"/>
+    <text x="600" y="430" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-weight="700" font-size="300" fill="#e08438" letter-spacing="-10">:&gt;</text>
+    <text x="600" y="560" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="34" fill="#e6edf3" letter-spacing="4">PitziLabs · README</text>
+  </svg>
+</template>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/marked@12.0.2/marked.min.js"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel">
+const { useState, useEffect } = React;
+
+const READMES = [
+  { id: "runbook",   label: "A · Runbook",   file: "github/readme-runbook.md",   w: 820, h: 905 },
+  { id: "banner",    label: "B · Banner",    file: "github/readme-banner.md",    w: 820, h: 1150 },
+  { id: "dashboard", label: "C · Status board", file: "github/readme-dashboard.md", w: 820, h: 1085 },
+];
+
+const BookIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true">
+    <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"/>
+  </svg>
+);
+const PencilIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" className="pencil" aria-hidden="true">
+    <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"/>
+  </svg>
+);
+
+function ReadmeCard({ file }) {
+  const [html, setHtml] = useState(null);
+  const [err, setErr] = useState(null);
+  useEffect(() => {
+    let alive = true;
+    fetch(file)
+      .then(r => { if (!r.ok) throw new Error(r.status + " " + r.statusText); return r.text(); })
+      .then(md => {
+        if (!alive) return;
+        let out = marked.parse(md, { gfm: true, breaks: false });
+        out = out.replace(/src="\.\/assets\//g, 'src="github/assets/');
+        setHtml(out);
+      })
+      .catch(e => alive && setErr(String(e)));
+    return () => { alive = false; };
+  }, [file]);
+
+  return (
+    <div className="gh-card">
+      <div className="gh-head">
+        <BookIcon />
+        <span className="path">profile/</span>README.md
+        <span className="spacer"></span>
+        <PencilIcon />
+      </div>
+      <div className="gh-body">
+        {err && <div className="gh-loading">Could not load {file}: {err}</div>}
+        {!err && html === null && <div className="gh-loading">rendering markdown…</div>}
+        {!err && html !== null && (
+          <div className="markdown-body" dangerouslySetInnerHTML={{ __html: html }} />
+        )}
+      </div>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <DesignCanvas>
+      <DCSection id="org-readme" title="PitziLabs — Org profile README"
+        subtitle="Three directions · GitHub dark · drop into .github/profile/README.md">
+        {READMES.map(r => (
+          <DCArtboard key={r.id} id={r.id} label={r.label} width={r.w} height={r.h}>
+            <ReadmeCard file={r.file} />
+          </DCArtboard>
+        ))}
+      </DCSection>
+    </DesignCanvas>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

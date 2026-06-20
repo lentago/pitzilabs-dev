@@ -30,6 +30,13 @@ subdomain of `icecreamtofightwith.com`.
   (`colors_and_type.css`) and self-hosted fonts.
 - **`design/`** is a frozen concept archive (see `design/ARCHIVE.md`) —
   reference-only, never re-synced. It is allowed to diverge from the live site.
+- **`lab/`** is the design dev/staging tier (see `lab/README.md`) — active
+  exploration pulled from Claude Design, evaluated against `/BRAND.md`, then
+  promoted to `src/` (or to another deliverable's home) / parked / dropped.
+  Nothing in `lab/` ships; churn it freely.
+
+Think of it as a pipeline: **`design/` = immutable archive · `lab/` = dev/staging
+· `src/` = prod.**
 
 ## How this site was originally built (archive)
 
