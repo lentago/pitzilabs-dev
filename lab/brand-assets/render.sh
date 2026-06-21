@@ -12,7 +12,7 @@ CHROME="${CHROME:-google-chrome}"
 
 # Per-candidate 512² PNGs (final deliverables — run once a direction is chosen).
 # Each SVG is wrapped in a 512×512 page so the @font-face applies to <text>.
-for svg in pl-navy cjp-brackets-navy; do
+for svg in pl-navy cjp-brackets-navy pl-navy-square cjp-brackets-navy-square; do
   [ -f "$svg.svg" ] || continue
   cat > ".wrap-$svg.html" <<HTML
 <!doctype html><meta charset="utf-8"><style>

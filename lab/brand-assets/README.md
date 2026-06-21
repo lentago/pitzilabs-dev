@@ -21,10 +21,17 @@ og:image cards — see [`../org-readme/`](../org-readme/).)
 
 ## Chosen
 
-| File | Glyph | Scheme | For |
-|------|-------|--------|-----|
-| `pl-navy.svg`           | `<pl:>`  | navy chip / cream `pl`   | Org — matches favicon + site nav |
-| `cjp-brackets-navy.svg` | `<cjp:>` | navy chip / cream `cjp`  | Personal — honors the command-prompt motif |
+| File | Glyph | Corners | For |
+|------|-------|---------|-----|
+| `pl-navy.svg`                  | `<pl:>`  | rounded (rx 112) | Org — matches favicon + site nav |
+| `cjp-brackets-navy.svg`        | `<cjp:>` | rounded (rx 112) | Personal — honors the command-prompt motif |
+| `pl-navy-square.svg`           | `<pl:>`  | square (sharp)   | Org — surfaces that show the full square |
+| `cjp-brackets-navy-square.svg` | `<cjp:>` | square (sharp)   | Personal — surfaces that show the full square |
+
+**Rounded vs square:** identical mark/tokens, only the corner radius differs.
+GitHub **circle-crops** avatars, so the corners are invisible there — the square
+variants are for surfaces that show the full square edge (favicons, slides,
+og/social cards, print).
 
 `contact-sheet.html` is the decision record — it shows all four originals (the two
 above plus the dropped `pl-cream` / `cjp-plain` variants) on a GitHub-dark
