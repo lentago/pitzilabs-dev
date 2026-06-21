@@ -47,7 +47,7 @@ export function ServicesGrid() {
             fontFamily: "var(--font-display)", fontWeight: 700,
             fontSize: "clamp(36px, 4vw, 52px)", lineHeight: 1.05,
             letterSpacing: "-0.03em", margin: 0, color: "var(--fg1)"
-          }}>What I'll do for you.</h2>
+          }}>What we'll do for you.</h2>
         </div>
         <p style={{ fontSize: 16.5, color: "var(--fg2)", margin: 0, maxWidth: 520, lineHeight: 1.6, justifySelf: "end" }}>
           Four things, done well. No frameworks, no decks, no "digital transformation."
