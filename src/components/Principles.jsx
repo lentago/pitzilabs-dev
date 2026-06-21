@@ -46,11 +46,11 @@ export function Principles() {
           fontSize: "clamp(36px, 4vw, 52px)", lineHeight: 1.05,
           letterSpacing: "-0.03em", margin: "0 0 20px", color: "var(--fg1)"
         }}>
-          How I think about production.
+          How we think about production.
         </h2>
         <p style={{ fontSize: 17, color: "var(--fg2)", margin: 0, lineHeight: 1.6 }}>
           The full runbook is longer, drier, and in the repo. These are the six
-          I'd bring into a room on day one.
+          we'd bring into a room on day one.
         </p>
       </div>
 

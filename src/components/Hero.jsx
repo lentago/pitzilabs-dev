@@ -49,9 +49,8 @@ export function HeroDark() {
           fontFamily: "var(--font-body)", fontSize: 19, color: "#d8cec2",
           margin: "0 0 36px", maxWidth: 640, lineHeight: 1.55
         }}>
-          A career keeping production up — bare metal through cloud-native, and
-          every platform shift in between — now building it, breaking it, and
-          operating it myself.
+          Keeping production up — bare metal through cloud-native, and every
+          platform shift in between. We build it, break it, and operate it.
         </p>
 
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
